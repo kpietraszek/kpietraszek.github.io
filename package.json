@@ -11,14 +11,20 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "gatsby": "^2.24.66",
+    "gatsby-plugin-emotion": "^4.3.12",
+    "gatsby-plugin-favicon": "^3.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.1.2"
   },
   "repository": {

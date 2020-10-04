@@ -1,5 +1,13 @@
 import React from "react"
+import Layout from "../components/Layout"
+import HeroSection from "../components/HeroSection"
+import BlogSection from "../components/BlogSection"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+const Home = () => (
+  <Layout>
+    <HeroSection />
+    <BlogSection />
+  </Layout>
+)
+
+export default Home
